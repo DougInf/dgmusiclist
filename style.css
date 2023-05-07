@@ -1,7 +1,5 @@
 body {
     background-color: rgb(24, 24, 24);
-    margin-left: 0;
-    padding: 0;
 }
     
 }
@@ -84,7 +82,7 @@ a {
     }
 
     iframe {
-        width: 440px;
+        width: 425px;
         height: 240px;
     }
 
