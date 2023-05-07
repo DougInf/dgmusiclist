@@ -24,7 +24,8 @@ h1, p {
     color: white;
 }
 
-html, body {   
+html, body {
+    margin-right: 10px; 
     height: 100%;
     text-align: center;
     text-decoration: none;
