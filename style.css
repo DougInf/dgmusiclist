@@ -1,7 +1,6 @@
 body {
     background-color: rgb(24, 24, 24);
-}
-    
+    font-family: 'Courier New', Courier, monospace;
 }
 
 img {
@@ -20,12 +19,15 @@ img:hover {
 
 
 
-h1, p {
+h1, h2, p {
     color: white;
 }
 
-html, body {
-    margin-right: 10px; 
+h2 {
+    padding: 15px;
+}
+
+html, body {   
     height: 100%;
     text-align: center;
     text-decoration: none;
@@ -49,13 +51,40 @@ a {
 .corpo {
     padding: 30px;
 }
- /* Defina regras CSS para a versão móvel da página */
+
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .back-to-top.show {
+    display: block;
+  }
+
+.container {
+    height: 2000px; /* Ajuste a altura conforme necessário */
+  }
+  
+  #scroll-section {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    scroll-margin-top: 50vh;
+  }
+  
+  #scroll-section.show {
+    opacity: 1;
+  }
+/* Defina regras CSS para a versão móvel da página */
  @media only screen and (max-width: 600px) {
-     body {
-    background-color: rgb(24, 24, 24);
-    margin-left: 0;
-    padding: 0;
-}
 
     img {
         width: 100%;
@@ -65,7 +94,8 @@ a {
         transition-delay: calc(100);
     }
 
-    html, body {   
+    html, body {
+        margin-right: 10px;   
         height: 100%;
         font-size: 15px;
         text-align: center;
