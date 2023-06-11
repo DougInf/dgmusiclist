@@ -130,11 +130,13 @@ a {
 
     main {
         margin: auto;
-        margin-left: 10px:
+        margin-left: 20px;
+        margin-right: 10px;
     }
 
     iframe {
-        width: 415px;
+        margin-right: 15px; 
+        width: 420px;
         height: 240px;
     }
 
