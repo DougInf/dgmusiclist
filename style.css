@@ -3,8 +3,13 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+main {
+    background-color: rgb(57, 58, 58);
+    padding: 5px;
+    margin: auto;
+}
+
 img {
-    padding: 7px;
     display: -moz-grid-line;
     transition-delay: calc(100);
 }
@@ -55,6 +60,7 @@ a {
 .back-to-top {
     display: none;
     position: fixed;
+    margin-bottom: 60px;
     bottom: 20px;
     right: 20px;
     width: 50px;
@@ -83,13 +89,23 @@ a {
   #scroll-section.show {
     opacity: 1;
   }
+
+  footer { 
+    background-color: rgb(57, 58, 58);
+        padding: 10px;
+        margin-top:-290px;
+}
+
+
 /* Defina regras CSS para a versão móvel da página */
  @media only screen and (max-width: 600px) {
 
     img {
         width: 100%;
         height: 100%;
-        padding: 7px;
+        padding: auto;
+        margin: auto;
+        margin-left: auto;
         display: -moz-grid-line;
         transition-delay: calc(100);
     }
@@ -112,12 +128,20 @@ a {
         padding: 10px;
     }
 
+    main {
+        margin: auto;
+    }
+
     iframe {
         width: 425px;
         height: 240px;
     }
 
-
+    footer { 
+        background-color: rgb(57, 58, 58);
+        padding: 10px;
+        margin-top:200px;
+    }
 
 
 }
