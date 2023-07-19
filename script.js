@@ -20,7 +20,20 @@ window.addEventListener('scroll', function() {
   }
 });
 
+
 document.querySelector('.back-to-top').addEventListener('click', function(e) {
   e.preventDefault();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+var prevScrollPos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollPos > currentScrollPos) {
+        document.querySelector(".header").classList.remove("hidden");
+      } else {
+        document.querySelector(".header").classList.add("hidden");
+      }
+      prevScrollPos = currentScrollPos;
+    }
+
