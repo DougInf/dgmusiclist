@@ -1,11 +1,35 @@
 body {
     background-color: rgb(24, 24, 24);
     font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+}
+  
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center justify;
+    transition: top 0.3s ease-in-out;
+    z-index: 9999;
+  }
+
+.header.hidden {
+    top: -100px;
+  }
+
+  .corpo {
+    padding: 100px;
 }
 
 main {
     padding: 20px;
     margin: auto;
+    
     
 }
 
@@ -23,14 +47,36 @@ img:hover {
     filter: blur(1px);
 }
 
+iframe {
+    margin-top: auto;
+    margin-right: 15px; 
+    width: 680px;
+    height: 420px;
+}
 
+h1 {
+    font-size: 25px;
+}
 
-h1, h2, p {
+.content {
+    margin: auto;
+    width: 680px;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+
+}
+
+h1, p {
+    text-align: center justify;
     color: white;
 }
 
 h2 {
     padding: 15px;
+    color: white;
+    text-align: center justify;
 }
 
 html, body {   
@@ -42,10 +88,12 @@ html, body {
 a {
     color: white;
 }
+
 .voltar {
     margin-top: 10px;
     padding: 10px;
 }
+
 .voltar:hover {
     box-shadow: 0px 0px 25px 10px #75f002ab;
     padding: 5px;
@@ -54,8 +102,23 @@ a {
     transform: scale(1.1);
     filter: blur(1px);
 }
-.corpo {
-    padding: 30px;
+
+
+
+.social-box {
+    padding: 10px;
+    
+}
+
+i {
+    border-radius: 5px;
+    background-color: #3f3f3f;
+    padding: 10px;
+    width: 20px;
+}
+
+.social-box i {
+    margin-right: 5px;
 }
 
 .back-to-top {
@@ -76,7 +139,6 @@ a {
   .back-to-top.show {
     display: block;
   }
-
   
   #scroll-section {
     opacity: 0;
@@ -88,11 +150,36 @@ a {
     opacity: 1;
   }
 
+ footer {
+    background-color: #333;
+    color: #fff;
+    padding: x;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+ }
  
-
 
 /* Defina regras CSS para a versão móvel da página */
  @media only screen and (max-width: 600px) {
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center justify;
+        transition: top 0.3s ease-in-out;
+        z-index: 9999;
+      }
+
 
     img {
         width: 100%;
@@ -119,18 +206,31 @@ a {
         padding: 10px;
     }
     .corpo {
-        padding: 10px;
+        text-align: center justify;
+        padding: 70px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+       
     }
 
+    .content {
+        margin: auto;
+        width: 400px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        text-align: justify;
+    
+    }
 
     iframe {
         margin-right: 15px; 
-        width: 420px;
-        height: 240px;
+        width: 100%;
+        
     }
 
     footer { 
         padding: 10px;
+       
     }
 
 
